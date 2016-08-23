@@ -114,6 +114,38 @@
         </a>
     </div>
 </div>
+<div class="hd">
+    <h1 class="page_title">BzUI</h1>
+    <p class="page_desc">播种Web专用</p>
+</div>
+<div class="bd">
+    <div class="weui_grids">
+        <a href="#/bz/button" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_button"></i>
+            </div>
+            <p class="weui_grid_label">
+                Button
+            </p>
+        </a>
+        <a href="#/bz/dialog" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_dialog"></i>
+            </div>
+            <p class="weui_grid_label">
+                Dialog
+            </p>
+        </a>
+        <a href="#/bz/share" class="weui_grid">
+            <div class="weui_grid_icon">
+                <i class="icon icon_share"></i>
+            </div>
+            <p class="weui_grid_label">
+                Share
+            </p>
+        </a>
+    </div>
+</div>
 </script>
     <script type="text/html" id="tpl_button">
 <div class="hd">
@@ -833,6 +865,52 @@
             </div>
         </div>
     </div>
+</div>
+</script>
+    <script type="text/html" id="tpl_bz_button">
+<div class="hd">
+    <h1 class="page_title">Button</h1>
+</div>
+<div class="spacing">
+    <a href="javascript:;" class="bz_btn weui_btn_primary">按钮</a>
+    <a href="javascript:;" class="bz_btn weui_btn_disabled weui_btn_primary">按钮</a>
+
+    <a href="javascript:;" class="bz_btn weui_btn_warn">按钮</a>
+    <a href="javascript:;" class="bz_btn weui_btn_disabled weui_btn_warn">按钮</a>
+
+    <a href="javascript:;" class="bz_btn weui_btn_primary bz_btn_fixed">固定悬浮按钮</a>
+</div>
+</script>
+    <script type="text/html" id="tpl_bz_dialog">
+<div class="hd">
+    <h1 class="page_title">Dialog</h1>
+</div>
+<div class="bd spacing">
+    <a href="javascript:;" class="weui_btn weui_btn_primary" id="showBzDialog1">点击弹出Dialog样式一</a>
+</div>
+<!--BEGIN dialog1-->
+<div class="weui_dialog_confirm" id="bzdialog1" style="display: none;">
+    <div class="weui_mask"></div>
+    <div class="weui_dialog">
+        <div class="weui_dialog_hd"><strong class="weui_dialog_title">弹窗标题</strong></div>
+        <div class="weui_dialog_bd">自定义弹窗内容，居左对齐显示，告知需要确认的信息等</div>
+        <div class="weui_dialog_ft">
+            <a href="javascript:;" class="weui_btn_dialog default" style="background-color: #3b93d8; color: #fff;">取消</a>
+        </div>
+    </div>
+</div>
+<!--END dialog1-->
+</script>
+    <script type="text/html" id="tpl_bz_share">
+<div class="hd">
+    <h1 class="page_title">Share</h1>
+</div>
+<div class="bz_dialog_share">
+  <div class="weui_mask"></div>
+  <div class="bz_share">
+    <div class="bz_share_arrow"></div>
+    <div class="bz_share_logo"></div>
+  </div>
 </div>
 </script>
     <script src="./zepto.min.js"></script>

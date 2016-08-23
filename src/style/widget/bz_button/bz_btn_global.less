@@ -1,0 +1,18 @@
+@import "../../base/fn";
+
+.bz_btn {
+    position: relative;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 14px;
+    padding-right: 14px;
+    box-sizing: border-box;
+    font-size: @weuiBtnFontSize;
+    text-align: center;
+    text-decoration: none;
+    color: @weuiBtnFontColor;
+    line-height: unit(@weuiBtnHeight/@weuiBtnFontSize);
+    .setTapColor();
+    overflow: hidden;
+}

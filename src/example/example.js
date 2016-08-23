@@ -257,6 +257,43 @@ $(function () {
         }
     };
 
+    // button
+    var bzButton = {
+        url: '/bz/button',
+        className: 'bz_button',
+        render: function () {
+            return $('#tpl_bz_button').html();
+        }
+    };
+
+    // dialog
+    var bzDialog = {
+        url: '/bz/dialog',
+        className: 'bz_dialog',
+        render: function () {
+            return $('#tpl_bz_dialog').html();
+        },
+        bind: function () {
+            $('#container').on('click', '#showBzDialog1', function () {
+                $('#bzdialog1').show().on('click', '.weui_btn_dialog', function () {
+                    $('#bzdialog1').off('click').hide();
+                });
+            });
+        }
+    };
+
+    // share
+    var bzShare = {
+        url: '/bz/share',
+        className: 'bz_share',
+        render: function () {
+            return $('#tpl_bz_share').html();
+        },
+        bind: function () {
+            
+        }
+    };
+
     router.push(home)
         .push(button)
         .push(cell)
@@ -272,6 +309,9 @@ $(function () {
         .push(navbar)
         .push(tabbar)
         .push(searchbar)
+        .push(bzButton)
+        .push(bzDialog)
+        .push(bzShare)
         .setDefault('/')
         .init();
 
