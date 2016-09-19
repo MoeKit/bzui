@@ -294,6 +294,16 @@ $(function () {
         }
     };
 
+    // download
+
+    var bzDownload = {
+        url: '/bz/download',
+        className: 'bz_download',
+        render: function () {
+            return $('#tpl_bz_download').html();
+        }
+    };
+
     router.push(home)
         .push(button)
         .push(cell)
@@ -312,6 +322,7 @@ $(function () {
         .push(bzButton)
         .push(bzDialog)
         .push(bzShare)
+        .push(bzDownload)
         .setDefault('/')
         .init();
 

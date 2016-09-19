@@ -1,0 +1,40 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'e:\\pcApp\\node\\node.exe',
+1 verbose cli   'e:\\pcApp\\node\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'run',
+1 verbose cli   'start' ]
+2 info using npm@2.11.2
+3 info using node@v0.12.5
+4 warn invalid config proxy=""
+5 warn invalid config Must be a full url with 'http://'
+6 verbose run-script [ 'prestart', 'start', 'poststart' ]
+7 info prestart weui@0.4.3
+8 info start weui@0.4.3
+9 verbose unsafe-perm in lifecycle true
+10 info weui@0.4.3 Failed to exec start script
+11 verbose stack Error: weui@0.4.3 start: `gulp -ws`
+11 verbose stack Exit status 1
+11 verbose stack     at EventEmitter.<anonymous> (e:\pcApp\node\node_modules\npm\lib\utils\lifecycle.js:213:16)
+11 verbose stack     at EventEmitter.emit (events.js:110:17)
+11 verbose stack     at ChildProcess.<anonymous> (e:\pcApp\node\node_modules\npm\lib\utils\spawn.js:24:14)
+11 verbose stack     at ChildProcess.emit (events.js:110:17)
+11 verbose stack     at maybeClose (child_process.js:1015:16)
+11 verbose stack     at Process.ChildProcess._handle.onexit (child_process.js:1087:5)
+12 verbose pkgid weui@0.4.3
+13 verbose cwd d:\bozhong\bzui
+14 error Windows_NT 6.1.7601
+15 error argv "e:\\pcApp\\node\\node.exe" "e:\\pcApp\\node\\node_modules\\npm\\bin\\npm-cli.js" "run" "start"
+16 error node v0.12.5
+17 error npm  v2.11.2
+18 error code ELIFECYCLE
+19 error weui@0.4.3 start: `gulp -ws`
+19 error Exit status 1
+20 error Failed at the weui@0.4.3 start script 'gulp -ws'.
+20 error This is most likely a problem with the weui package,
+20 error not with npm itself.
+20 error Tell the author that this fails on your system:
+20 error     gulp -ws
+20 error You can get their info via:
+20 error     npm owner ls weui
+20 error There is likely additional logging output above.
+21 verbose exit [ 1, true ]
